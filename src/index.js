@@ -129,6 +129,9 @@ export class ReactNativeModal extends Component {
         this.props.backdropTransitionInTiming
       );
     }
+    if (nextProps.swipeDirection !== this.props.swipeDirection) {
+      this.setState({ isSwipeable: newProps.swipeDirection ? true: false });
+    }
   }
 
   componentDidMount() {
