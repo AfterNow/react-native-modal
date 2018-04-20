@@ -130,7 +130,7 @@ export class ReactNativeModal extends Component {
       );
     }
     if (nextProps.swipeDirection !== this.props.swipeDirection) {
-      this.setState({ isSwipeable: newProps.swipeDirection ? true: false });
+      this.setState({ isSwipeable: nextProps.swipeDirection ? true: false });
     }
   }
 
